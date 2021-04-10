@@ -25,15 +25,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be35f56-55ca-47b4-bf24-17c642284b1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/actions/auth/withAuth.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/actions/user/userGetPosts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/papyrus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/papyrus.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/user/actions/auth/withAuth.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/user/middleware/mongoose/mongodb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/user/model/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/actions/auth/withAuth.controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/actions/user/userGetPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/user/actions/user/userGetPosts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +62,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\user" />
       <recent name="D:\my\myProjects\Development\Projects\papyrus\server\actions\auth" />
       <recent name="D:\my\myProjects\Development\Projects\papyrus\pages" />
     </key>
@@ -96,7 +96,7 @@
       <updated>1617732046294</updated>
       <workItem from="1617732047506" duration="6501000" />
       <workItem from="1617780157515" duration="178000" />
-      <workItem from="1618052016136" duration="8267000" />
+      <workItem from="1618052016136" duration="13637000" />
     </task>
     <servers />
   </component>
@@ -115,21 +115,21 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="406" key="GridCell.Tab.0.bottom" timestamp="1618074214581">
+    <state width="1877" height="331" key="GridCell.Tab.0.bottom" timestamp="1618079535903">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1618074214581" />
-    <state width="1877" height="406" key="GridCell.Tab.0.center" timestamp="1618074214581">
+    <state width="1877" height="331" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1618079535903" />
+    <state width="1877" height="331" key="GridCell.Tab.0.center" timestamp="1618079535902">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1618074214581" />
-    <state width="1877" height="406" key="GridCell.Tab.0.left" timestamp="1618074214581">
+    <state width="1877" height="331" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1618079535902" />
+    <state width="1877" height="331" key="GridCell.Tab.0.left" timestamp="1618079535902">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1618074214581" />
-    <state width="1877" height="406" key="GridCell.Tab.0.right" timestamp="1618074214581">
+    <state width="1877" height="331" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1618079535902" />
+    <state width="1877" height="331" key="GridCell.Tab.0.right" timestamp="1618079535903">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1618074214581" />
+    <state width="1877" height="331" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1618079535903" />
   </component>
 </project>
