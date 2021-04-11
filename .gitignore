@@ -12,6 +12,10 @@
 /.next/
 /out/
 
+# files
+./error.log
+./logs.log
+
 # production
 /build
 

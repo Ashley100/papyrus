@@ -1,6 +1,16 @@
 // Home page API
 
-import withAuthController from "../../server/user/actions/auth/withAuth.controller";
-import userGetPosts from "../../server/user/actions/user/userGetPosts";
+import withMiddleware from "../../server/middleware/withMiddleware";
+import userGetPosts from "../../server/lib/actions/user/user/userGetPosts";
+import withAuth from "../../server/middleware/withAuth";
 
-export default async (req, res) => (await withAuthController(req, res))(userGetPosts);
+
+export default (req, res) => withMiddleware(
+    req, res,
+    userGetPosts,
+    [
+        withAuth
+    ]
+);
+
+
