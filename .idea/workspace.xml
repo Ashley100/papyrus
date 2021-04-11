@@ -25,14 +25,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be35f56-55ca-47b4-bf24-17c642284b1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/user/actions/auth/withAuth.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/user/middleware/mongoose/mongodb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/user/model/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/auth/forgotpassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/auth/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/auth/registration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userAuth.class.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userForgotpasswordController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userLogin.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userRegistration.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/lib/actions/user/user/userHelper.class.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/lib/model/Rules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middleware/withMethod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middleware/withMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middleware/withoutAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/tools/Error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/tools/logger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/api/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/actions/auth/withAuth.controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/actions/user/userGetPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/user/actions/user/userGetPosts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/user/actions/auth/withAuth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/withAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/user/actions/user/userGetPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lib/actions/user/user/userGetPosts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/user/middleware/mongoose/mongodb.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/mongodb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/user/model/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lib/model/User.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +78,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\user" />
-      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\actions\auth" />
-      <recent name="D:\my\myProjects\Development\Projects\papyrus\pages" />
+      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\tools" />
+      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\lib\actions\user" />
+      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\middleware" />
+      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\lib\model" />
+      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\lib\actions" />
     </key>
   </component>
   <component name="RunManager">
@@ -96,7 +114,9 @@
       <updated>1617732046294</updated>
       <workItem from="1617732047506" duration="6501000" />
       <workItem from="1617780157515" duration="178000" />
-      <workItem from="1618052016136" duration="13637000" />
+      <workItem from="1618052016136" duration="14321000" />
+      <workItem from="1618131278170" duration="1875000" />
+      <workItem from="1618133180028" duration="22895000" />
     </task>
     <servers />
   </component>
@@ -113,23 +133,32 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="331" key="GridCell.Tab.0.bottom" timestamp="1618079535903">
+    <state x="731" y="357" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618138278170">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="331" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1618079535903" />
-    <state width="1877" height="331" key="GridCell.Tab.0.center" timestamp="1618079535902">
+    <state x="731" y="357" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1618138278170" />
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1618162179192">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="331" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1618079535902" />
-    <state width="1877" height="331" key="GridCell.Tab.0.left" timestamp="1618079535902">
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1618162179192" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1618162179192">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="331" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1618079535902" />
-    <state width="1877" height="331" key="GridCell.Tab.0.right" timestamp="1618079535903">
+    <state width="1877" height="269" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1618162179192" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1618162179191">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="331" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1618079535903" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1618162179191" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1618162179192">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="269" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1618162179192" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1618139739496">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1618139739496" />
   </component>
 </project>

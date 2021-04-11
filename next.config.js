@@ -10,6 +10,6 @@ module.exports = {
     env: {
         mongodbURL: `mongodb+srv://${mongodb.username}:${mongodb.password}@cluster0.bynuf.mongodb.net/${mongodb.databaseName}?retryWrites=true&w=majority`,
         bcryptSecret: "",
-        jwtSecret: ""
+        jwtSecret: "48033da7-cd64-44f2-a730-f80ae4849004"
     }
 }
