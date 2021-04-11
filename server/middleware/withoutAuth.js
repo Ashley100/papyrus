@@ -15,7 +15,7 @@ const withoutAuth = async (req, res) => {
 
         console.error("withoutAuth => error: ", error.message);
 
-        res.status(301).redirect("http://localhost:3000/").json({message: "redirect from home page"});
+        res.status(301).redirect("/").json({message: "redirect from home page"});
 
         throw Error("", error.message, error);
 

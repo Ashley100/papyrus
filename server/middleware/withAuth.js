@@ -26,7 +26,7 @@ const withAuth = async (req, res) => {
 
         } else {
 
-            res.status(301).redirect("http://localhost:3000/").json({message: "redirect from home page"});
+            res.status(301).redirect("/").json({message: "redirect from home page"});
 
             throw error.message;
 
