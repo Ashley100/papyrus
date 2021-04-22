@@ -99,21 +99,29 @@ class UserHelperClass {
 
     async verifyJWT (token) {
 
-        try {
+        return jwt.verify(token, process.env.jwtSecret, (error, decoded) => {
 
-            return jwt.verify(token, process.env.jwtSecret, (error, decoded) => {
+            if (!error && decoded) return decoded;
 
-                if (!error && decoded) return decoded;
+            return false;
 
-                throw error
+        });
 
-            });
-
-        } catch(error) {
-
-            throw error;
-
-        }
+        // try {
+        //
+        //     return jwt.verify(token, process.env.jwtSecret, (error, decoded) => {
+        //
+        //         if (!error && decoded) return decoded;
+        //
+        //         throw error
+        //
+        //     });
+        //
+        // } catch(error) {
+        //
+        //     throw error;
+        //
+        // }
     }
 
 }

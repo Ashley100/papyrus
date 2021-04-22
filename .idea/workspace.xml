@@ -21,10 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0be35f56-55ca-47b4-bf24-17c642284b1f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/lib/actions/user/auth/userLogin.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userLogin.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/lib/actions/user/user/userHelper.class.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lib/actions/user/user/userHelper.class.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/withMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/withMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/withoutAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/withoutAuth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -93,7 +94,7 @@
       <workItem from="1618052016136" duration="14321000" />
       <workItem from="1618131278170" duration="1875000" />
       <workItem from="1618133180028" duration="24250000" />
-      <workItem from="1619118411214" duration="563000" />
+      <workItem from="1619118411214" duration="7335000" />
     </task>
     <servers />
   </component>
@@ -117,22 +118,26 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="731" y="357" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1618138278170" />
-    <state width="1877" height="328" key="GridCell.Tab.0.bottom" timestamp="1618163028201">
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1619124551256">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="328" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1618163028201" />
-    <state width="1877" height="328" key="GridCell.Tab.0.center" timestamp="1618163028201">
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1619124551256" />
+    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1619124551256">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="328" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1618163028201" />
-    <state width="1877" height="328" key="GridCell.Tab.0.left" timestamp="1618163028201">
+    <state width="1877" height="292" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1619124551256" />
+    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1619124551256">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="328" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1618163028201" />
-    <state width="1877" height="328" key="GridCell.Tab.0.right" timestamp="1618163028201">
+    <state width="1877" height="292" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1619124551256" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1619124551256">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="328" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1618163028201" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1619124551256" />
+    <state x="667" y="288" width="585" height="534" key="find.popup" timestamp="1619121187015">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="667" y="288" width="585" height="534" key="find.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1619121187015" />
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1618139739496">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>

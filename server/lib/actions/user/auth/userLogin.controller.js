@@ -10,6 +10,8 @@ export default async function userLoginController (req, res) {
 
     } catch (e) {
 
+        console.log("userLoginController => error: ", e);
+
         res.status(501).json({"message": "Login failed!"});
     }
 
