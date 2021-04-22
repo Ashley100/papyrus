@@ -13,16 +13,14 @@ export default async function withMiddleware (req, res, fn, middleware = []) {
 
         }
 
-    } catch (e) {
+        return fn(req, res);
 
-        // res.status(404).send(e);
+    } catch (e) {
 
         logger.error(e.message);
 
-        return false;
+        res.status(e.status).send(e);
 
     }
-
-    return fn(req, res);
 
 }

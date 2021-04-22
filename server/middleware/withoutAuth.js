@@ -7,17 +7,13 @@ import UserHelperClass from "../lib/actions/user/user/userHelper.class";
 
 const withoutAuth = async (req, res) => {
 
-    try {
+    const token = await UserHelperClass.verifyJWT(req.cookies.token);
 
-        await UserHelperClass.verifyJWT(req.cookies.token);
+    console.log("withoutAuth => try: ", token);
 
-    } catch (error) {
+    if (token) {
 
-        console.error("withoutAuth => error: ", error.message);
-
-        res.status(301).redirect("/").json({message: "redirect from home page"});
-
-        throw Error("", error.message, error);
+        throw Error(409, "Вы уже авторизованны");
 
     }
 
