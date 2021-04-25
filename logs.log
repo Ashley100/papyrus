@@ -13,3 +13,35 @@
 2021-04-22T19:53:37.681Z [right meow!] error: jwt expired
 2021-04-22T19:53:54.439Z [right meow!] error: jwt expired
 2021-04-22T21:12:12.831Z [right meow!] error: Вы уже авторизованны
+2021-04-22T21:28:40.161Z [right meow!] error: Вы уже авторизованны
+2021-04-22T21:30:25.352Z [right meow!] error: undefined
+2021-04-22T21:31:00.540Z [right meow!] error: This method accept only GET
+2021-04-22T21:31:19.614Z [right meow!] error: This method accept only GET
+2021-04-22T21:31:43.065Z [right meow!] error: This method accept only POST
+2021-04-22T21:31:53.203Z [right meow!] error: Вы уже авторизованны
+2021-04-22T21:31:57.333Z [right meow!] error: This method accept only GET
+2021-04-22T21:32:09.374Z [right meow!] error: This method accept only POST
+2021-04-22T21:32:15.371Z [right meow!] error: Вы уже авторизованны
+2021-04-22T21:32:45.283Z [right meow!] error: This method accept only GET
+2021-04-22T21:32:56.532Z [right meow!] error: This method accept only GET
+2021-04-22T21:33:14.176Z [right meow!] error: This method accept only POST
+2021-04-23T19:29:54.944Z [right meow!] error: Вы уже авторизованны
+2021-04-23T19:30:10.135Z [right meow!] error: Вы уже авторизованны
+2021-04-23T19:30:33.444Z [right meow!] error: Вы уже авторизованны
+2021-04-23T19:30:34.453Z [right meow!] error: Вы уже авторизованны
+2021-04-23T19:31:18.771Z [right meow!] error: Вы уже авторизованны
+2021-04-23T19:34:48.116Z [right meow!] error: Вы уже авторизованны
+2021-04-23T19:34:53.606Z [right meow!] error: Вы уже авторизованны
+2021-04-23T19:56:25.018Z [right meow!] error: fn is not a function
+2021-04-23T19:56:58.149Z [right meow!] error: fn is not a function
+2021-04-23T19:59:43.958Z [right meow!] error: fn is not a function
+2021-04-24T20:04:57.393Z [right meow!] error: This method accept only GET
+2021-04-24T20:06:29.930Z [right meow!] error: This method accept only GET
+2021-04-24T20:47:44.542Z [right meow!] error: Вы уже авторизованны
+2021-04-24T20:50:49.824Z [right meow!] error: Вы уже авторизованны
+2021-04-24T20:50:54.314Z [right meow!] error: Вы уже авторизованны
+2021-04-25T15:57:15.247Z [right meow!] error: Вы уже авторизованны
+2021-04-25T15:57:18.968Z [right meow!] error: Вы уже авторизованны
+2021-04-25T16:36:12.691Z [right meow!] error: Вы уже авторизованны
+2021-04-25T16:36:13.817Z [right meow!] error: Вы уже авторизованны
+2021-04-25T16:36:15.333Z [right meow!] error: Вы уже авторизованны

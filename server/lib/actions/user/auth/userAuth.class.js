@@ -1,5 +1,6 @@
 import UserHelperClass from "../user/userHelper.class";
-import Cookies from "cookies";
+// import Cookies from "cookies";
+import {Error} from "../../../../tools/Error";
 
 
 
@@ -49,6 +50,14 @@ class UserAuthClass {
             throw error;
 
         }
+
+    }
+
+    async isLogged (token) {
+
+        const t = await UserHelperClass.verifyJWT(token);
+
+        if (!t) throw Error(409, "Вы не авторизованны!");
 
     }
 

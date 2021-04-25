@@ -1,6 +1,8 @@
 import Head from 'next/head'
 // @ts-ignore
 import styles from '../styles/Home.module.css';
+import Link from "next/link";
+import React from "react";
 
 interface Interface {
   red: string
@@ -9,6 +11,25 @@ interface Interface {
 export default function Home() {
   return (
     <div className={styles.container}>
+
+      <ul>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/login">
+            <a>Login</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/logout">
+            <a>Logout</a>
+          </Link>
+        </li>
+      </ul>
+
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
