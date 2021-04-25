@@ -19,12 +19,12 @@ export default async function userLogoutController (request, response) {
 
         if(!token) throw Error(409, "Вы не авторизованны!");
 
-        // response.setHeader("Set-Cookie",
-        //     cookie.serialize("token", sToken, {
-        //         path: "/",
-        //         maxAge: 1
-        //     })
-        // );
+        response.setHeader("Set-Cookie",
+            cookie.serialize("token", sToken, {
+                path: "/",
+                maxAge: 1
+            })
+        );
         // response.setHeader("Set-Cookie", ["token=null"]);
         response.setHeader("Authorization", "Bearer null");
 
@@ -33,14 +33,6 @@ export default async function userLogoutController (request, response) {
     } catch (e) {
 
         console.log("userLogoutController => error: ", e);
-
-        response.setHeader("Set-Cookie",
-            cookie.serialize("token", "null", {
-                httpOnly: false,
-                path: "/",
-                maxAge: 0
-            })
-        );
 
         response.status(501).json(formatResponse(409, e, "Logout failed!"));
     }
