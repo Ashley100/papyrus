@@ -1,7 +1,7 @@
 import User from "../../../model/User";
 import {compare, hash} from "bcrypt";
 import jwt from "jsonwebtoken";
-import Cookies from "cookies";
+import cookie from "cookie";
 
 class UserHelperClass {
 
@@ -84,9 +84,14 @@ class UserHelperClass {
 
             let newToken = await this.createJWT(user);
 
-            const cookies = new Cookies(req, res, { keys: ["token cat"] });
+            res.setHeader("Set-Cookie", cookie.serialize("token", newToken, {
+                httpOnly: false,
+                path: "/",
+                // maxAge: 60 * 60 * 24 * 7 // 1 week
+                maxAge: 60 // 1 min
+            }))
 
-            cookies.set('token', newToken, { httpOnly: true });
+            // res.setHeader("Authorization", `Bearer ${newToken}`);
 
             return newToken;
 
@@ -102,26 +107,10 @@ class UserHelperClass {
         return jwt.verify(token, process.env.jwtSecret, (error, decoded) => {
 
             if (!error && decoded) return decoded;
-
+            console.log("verifyJWT >> ", false);
             return false;
 
         });
-
-        // try {
-        //
-        //     return jwt.verify(token, process.env.jwtSecret, (error, decoded) => {
-        //
-        //         if (!error && decoded) return decoded;
-        //
-        //         throw error
-        //
-        //     });
-        //
-        // } catch(error) {
-        //
-        //     throw error;
-        //
-        // }
     }
 
 }

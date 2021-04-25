@@ -12,4 +12,6 @@ module.exports = {
         bcryptSecret: "",
         jwtSecret: "48033da7-cd64-44f2-a730-f80ae4849004"
     }
+
+
 }

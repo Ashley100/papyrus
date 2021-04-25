@@ -11,7 +11,7 @@ const withAuth = async (req, res) => {
 
         const token = await UserHelperClass.verifyJWT(req.cookies.token);
 
-        console.log(token);
+        console.log("withAuth >> token", token);
 
     } catch (error) {
 
@@ -26,7 +26,7 @@ const withAuth = async (req, res) => {
 
         } else {
 
-            res.status(301).redirect("/").json({message: "redirect from home page"});
+            await res.status(301).redirect("/").json({message: "redirect from home page"});
 
             throw error.message;
 

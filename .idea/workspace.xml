@@ -20,13 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be35f56-55ca-47b4-bf24-17c642284b1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/api/instanse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/header/header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/auth/islogged.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/auth/logout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/logout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userIsLogged.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userLogout.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/tools/response.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/lib/actions/user/auth/userLogin.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userLogin.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/lib/actions/user/auth/userAuth.class.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userAuth.class.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/lib/actions/user/user/userHelper.class.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lib/actions/user/user/userHelper.class.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middleware/withMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/withMiddleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middleware/withoutAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/withoutAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/withAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/withAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/withMethod.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/withMethod.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,17 +65,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/lib/actions/user/auth" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\my\myProjects\Development\Projects\papyrus\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\lib\actions\user\auth" />
+      <recent name="D:\my\myProjects\Development\Projects\papyrus\pages\api\auth" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\my\myProjects\Development\Projects\papyrus\pages" />
       <recent name="D:\my\myProjects\Development\Projects\papyrus\server\tools" />
       <recent name="D:\my\myProjects\Development\Projects\papyrus\server\lib\actions\user" />
       <recent name="D:\my\myProjects\Development\Projects\papyrus\server\middleware" />
       <recent name="D:\my\myProjects\Development\Projects\papyrus\server\lib\model" />
-      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\lib\actions" />
     </key>
   </component>
   <component name="RunManager">
@@ -94,7 +114,11 @@
       <workItem from="1618052016136" duration="14321000" />
       <workItem from="1618131278170" duration="1875000" />
       <workItem from="1618133180028" duration="24250000" />
-      <workItem from="1619118411214" duration="7335000" />
+      <workItem from="1619118411214" duration="8697000" />
+      <workItem from="1619161905579" duration="17000" />
+      <workItem from="1619203808435" duration="6098000" />
+      <workItem from="1619269127686" duration="15657000" />
+      <workItem from="1619348524754" duration="11890000" />
     </task>
     <servers />
   </component>
@@ -114,33 +138,37 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="731" y="357" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618138278170">
+    <state x="731" y="357" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619290547862">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="731" y="357" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1618138278170" />
-    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1619124551256">
+    <state x="731" y="357" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1619290547862" />
+    <state width="1877" height="259" key="GridCell.Tab.0.bottom" timestamp="1619373169989">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1619124551256" />
-    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1619124551256">
+    <state width="1877" height="259" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1619373169989" />
+    <state width="1877" height="259" key="GridCell.Tab.0.center" timestamp="1619373169988">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1619124551256" />
-    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1619124551256">
+    <state width="1877" height="259" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1619373169988" />
+    <state width="1877" height="259" key="GridCell.Tab.0.left" timestamp="1619373169988">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1619124551256" />
-    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1619124551256">
+    <state width="1877" height="259" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1619373169988" />
+    <state width="1877" height="259" key="GridCell.Tab.0.right" timestamp="1619373169988">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1619124551256" />
-    <state x="667" y="288" width="585" height="534" key="find.popup" timestamp="1619121187015">
+    <state width="1877" height="259" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1619373169988" />
+    <state x="667" y="288" width="585" height="534" key="find.popup" timestamp="1619374207408">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="667" y="288" width="585" height="534" key="find.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1619121187015" />
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1618139739496">
+    <state x="667" y="288" width="585" height="534" key="find.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1619374207408" />
+    <state x="616" y="258" key="run.anything.popup" timestamp="1619271254433">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1618139739496" />
+    <state x="616" y="258" key="run.anything.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1619271254433" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1619368249291">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1619368249291" />
   </component>
 </project>
