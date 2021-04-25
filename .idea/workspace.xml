@@ -20,29 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be35f56-55ca-47b4-bf24-17c642284b1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/api/instanse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/components/header/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/components/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/auth/islogged.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/auth/logout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/logout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userIsLogged.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userLogout.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tools/response.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/lib/actions/user/auth/userAuth.class.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userAuth.class.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/lib/actions/user/user/userHelper.class.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lib/actions/user/user/userHelper.class.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middleware/withAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/withAuth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middleware/withMethod.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/withMethod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/api/instanse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/api/instanse.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +97,7 @@
       <workItem from="1619161905579" duration="17000" />
       <workItem from="1619203808435" duration="6098000" />
       <workItem from="1619269127686" duration="15657000" />
-      <workItem from="1619348524754" duration="11890000" />
+      <workItem from="1619348524754" duration="12477000" />
     </task>
     <servers />
   </component>
@@ -142,22 +121,22 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="731" y="357" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1619290547862" />
-    <state width="1877" height="259" key="GridCell.Tab.0.bottom" timestamp="1619373169989">
+    <state width="1877" height="248" key="GridCell.Tab.0.bottom" timestamp="1619375621992">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1619373169989" />
-    <state width="1877" height="259" key="GridCell.Tab.0.center" timestamp="1619373169988">
+    <state width="1877" height="248" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1619375621992" />
+    <state width="1877" height="248" key="GridCell.Tab.0.center" timestamp="1619375621992">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1619373169988" />
-    <state width="1877" height="259" key="GridCell.Tab.0.left" timestamp="1619373169988">
+    <state width="1877" height="248" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1619375621992" />
+    <state width="1877" height="248" key="GridCell.Tab.0.left" timestamp="1619375621992">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1619373169988" />
-    <state width="1877" height="259" key="GridCell.Tab.0.right" timestamp="1619373169988">
+    <state width="1877" height="248" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1619375621992" />
+    <state width="1877" height="248" key="GridCell.Tab.0.right" timestamp="1619375621992">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1619373169988" />
+    <state width="1877" height="248" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1619375621992" />
     <state x="667" y="288" width="585" height="534" key="find.popup" timestamp="1619374207408">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>

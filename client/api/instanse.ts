@@ -3,8 +3,9 @@ import cookie from "cookie";
 
 
 export function api (request) {
+    console.log("process.env.IP, process.env.PORT >> ", process.env.IP, process.env.PORT);
     return axios.create({
-        baseURL: `${process.env.IP ? process.env.IP +":"+ process.env.PORT : 'http://localhost:3000'}/api/`,
+        baseURL: `http://localhost:${process.env.PORT ? process.env.PORT : '3000'}/api/`,
         headers: {
             'Authorization': `Bearer ${
                 request
