@@ -75,10 +75,10 @@ LoginPage.getInitialProps = async ({ req, res }) => {
     try {
 
         if(req) {
-            const response = await api(req).get('auth/islogged');
+            const response = await api(req).get('/api/auth/islogged');
             return response.data
         } else {
-            const response = await api(null).get('auth/islogged');
+            const response = await api(null).get('/api/auth/islogged');
             return response.data
         }
 

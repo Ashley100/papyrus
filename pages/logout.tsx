@@ -14,7 +14,7 @@ Logout.getInitialProps = async ({req, res}) => {
     if (res && req) {
 
         try {
-            await api(req).get('auth/logout');
+            await api(req).get('/api/auth/logout');
             // res.writeHead(302, { Location: '/login' }).end()
 
         } catch (e) {
@@ -23,7 +23,7 @@ Logout.getInitialProps = async ({req, res}) => {
         }
 
     } else {
-        await api(null).get('auth/logout');
+        await api(null).get('/api/auth/logout');
         await Router.push("/login");
     }
 
