@@ -11,7 +11,16 @@ module.exports = {
         mongodbURL: `mongodb+srv://${mongodb.username}:${mongodb.password}@cluster0.bynuf.mongodb.net/${mongodb.databaseName}?retryWrites=true&w=majority`,
         bcryptSecret: "",
         jwtSecret: "48033da7-cd64-44f2-a730-f80ae4849004"
-    }
+    },
+    "plugins": [
+    [
+        "babel-plugin-styled-components",
+        {
+            "ssr": false
+        }
+    ]
+]
+
 
 
 }
