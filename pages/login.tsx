@@ -1,6 +1,9 @@
 import React, {FC, useEffect, useState, EventHandler} from "react";
 import axios from "axios";
 import {api} from "../client/api/instanse";
+import {Input} from "../client/components/ui/input/input";
+import {Checkbox} from "../client/components/ui/input/checkbox";
+import {Href} from "../client/components/ui/tipografia/href";
 
 const LoginPage = ( props ) => {
 
@@ -39,8 +42,19 @@ const LoginPage = ( props ) => {
     return (
         <form onSubmit={submitHandler}>
 
+            <Input
+                name="name"
+                type="text"
+                placeholder="Name"
+                onInput={(e) => console.log(e.currentTarget.value)} />
+
+            <Checkbox>
+                Я согласен с правилами <Href href="/">соглашение</Href> с правилами
+            </Checkbox>
+
             <div className="container">
                 <label htmlFor="uname"><b>Username</b></label>
+
                 <input
                     onInput={(e) => setUserEmail(e.currentTarget.value)}
                     type="text"
@@ -70,8 +84,9 @@ const LoginPage = ( props ) => {
 
 }
 
-LoginPage.getInitialProps = async ({ req, res }) => {
+LoginPage.getInitialProps = async ({ props, req, res }) => {
 
+    console.log("init props Login page", props);
     try {
 
         if(req) {

@@ -27,7 +27,7 @@ Logout.getInitialProps = async ({req, res}) => {
         await Router.push("/login");
     }
 
-    return { data: null }
+    return { data: false }
 }
 
 export default Logout;

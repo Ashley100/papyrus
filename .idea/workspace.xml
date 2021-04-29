@@ -20,11 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be35f56-55ca-47b4-bf24-17c642284b1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Piter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/theme.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/ui/globals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/ui/input/checkbox.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/ui/input/input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/components/ui/tipografia/href.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/signup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/api/instanse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/api/instanse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/logout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/logout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/lib/actions/user/auth/userLogout.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lib/actions/user/auth/userLogout.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Home.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +54,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1qo3JsQi6RHc72IOhvgh7mDvd5c" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,25 +69,36 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/server/lib/actions/user/auth" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\my\myProjects\Development\Projects\papyrus\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\lib\actions\user\auth" />
-      <recent name="D:\my\myProjects\Development\Projects\papyrus\pages\api\auth" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\my\myProjects\Development\Projects\papyrus\public" />
       <recent name="D:\my\myProjects\Development\Projects\papyrus\pages" />
       <recent name="D:\my\myProjects\Development\Projects\papyrus\server\tools" />
       <recent name="D:\my\myProjects\Development\Projects\papyrus\server\lib\actions\user" />
       <recent name="D:\my\myProjects\Development\Projects\papyrus\server\middleware" />
-      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\lib\model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\my\myProjects\Development\Projects\papyrus\server\lib\actions\user\auth" />
+      <recent name="D:\my\myProjects\Development\Projects\papyrus\pages\api\auth" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -75,9 +109,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +146,15 @@
       <workItem from="1619161905579" duration="17000" />
       <workItem from="1619203808435" duration="6098000" />
       <workItem from="1619269127686" duration="15657000" />
-      <workItem from="1619348524754" duration="13525000" />
+      <workItem from="1619348524754" duration="14225000" />
+      <workItem from="1619421382010" duration="10000" />
+      <workItem from="1619462880121" duration="8248000" />
+      <workItem from="1619511769719" duration="28000" />
+      <workItem from="1619549406346" duration="6773000" />
+      <workItem from="1619593653263" duration="17000" />
+      <workItem from="1619636002494" duration="7758000" />
+      <workItem from="1619682869720" duration="164000" />
+      <workItem from="1619717037710" duration="4728000" />
     </task>
     <servers />
   </component>
@@ -124,33 +178,37 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="731" y="357" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1619290547862" />
-    <state width="1877" height="248" key="GridCell.Tab.0.bottom" timestamp="1619376254102">
+    <state width="1877" height="263" key="GridCell.Tab.0.bottom" timestamp="1619720193627">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="248" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1619376254102" />
-    <state width="1877" height="248" key="GridCell.Tab.0.center" timestamp="1619376254102">
+    <state width="1877" height="263" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1619720193627" />
+    <state width="1877" height="263" key="GridCell.Tab.0.center" timestamp="1619720193627">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="248" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1619376254102" />
-    <state width="1877" height="248" key="GridCell.Tab.0.left" timestamp="1619376254102">
+    <state width="1877" height="263" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1619720193627" />
+    <state width="1877" height="263" key="GridCell.Tab.0.left" timestamp="1619720193626">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="248" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1619376254102" />
-    <state width="1877" height="248" key="GridCell.Tab.0.right" timestamp="1619376254102">
+    <state width="1877" height="263" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1619720193626" />
+    <state width="1877" height="263" key="GridCell.Tab.0.right" timestamp="1619720193627">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="248" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1619376254102" />
-    <state x="667" y="288" width="585" height="534" key="find.popup" timestamp="1619374207408">
+    <state width="1877" height="263" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1619720193627" />
+    <state x="681" y="296" width="540" height="524" key="StructurePopup" timestamp="1619467597940">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="667" y="288" width="585" height="534" key="find.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1619374207408" />
-    <state x="616" y="258" key="run.anything.popup" timestamp="1619271254433">
+    <state x="681" y="296" width="540" height="524" key="StructurePopup/0.30.1920.1050@0.30.1920.1050" timestamp="1619467597940" />
+    <state x="667" y="288" width="585" height="534" key="find.popup" timestamp="1619554285784">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="616" y="258" key="run.anything.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1619271254433" />
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1619368249291">
+    <state x="667" y="288" width="585" height="534" key="find.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1619554285784" />
+    <state x="616" y="258" key="run.anything.popup" timestamp="1619719968525">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1619368249291" />
+    <state x="616" y="258" key="run.anything.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1619719968525" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1619642393111">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1619642393111" />
   </component>
 </project>
