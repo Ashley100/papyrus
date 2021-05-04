@@ -29,7 +29,7 @@ class MyApp extends App {
 
         pageProps.store = {
             user: {
-                logged: userLogged.status
+                logged: userLogged?.status || false
             }
         };
 
