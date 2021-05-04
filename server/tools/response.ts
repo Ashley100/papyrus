@@ -1,11 +1,13 @@
 interface Response {
-    status: number,
+    code: number,
+    status: boolean,
     results: any,
     message: string,
 }
 
-const formatResponse = <Response>(status, results, message) => {
+const formatResponse = <Response>(code, status, results, message) => {
     return {
+        code: code,
         status: status,
         results: results,
         message: message || ""

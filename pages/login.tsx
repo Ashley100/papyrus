@@ -84,9 +84,8 @@ const LoginPage = ( props ) => {
 
 }
 
-LoginPage.getInitialProps = async ({ props, req, res }) => {
+LoginPage.getInitialProps = async ({ req, res, ...props }) => {
 
-    console.log("init props Login page", props);
     try {
 
         if(req) {
