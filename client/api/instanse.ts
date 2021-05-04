@@ -3,8 +3,11 @@ import cookie from "cookie";
 
 
 export function api (request) {
+
+    const url = request ? new URL(request.headers.referer) : window.location;
+
     return axios.create({
-        //baseURL: `http://localhost:${process.env.PORT ? process.env.PORT : '3000'}/api/`,
+        baseURL: url.origin,
         headers: {
             'Authorization': `Bearer ${
                 request

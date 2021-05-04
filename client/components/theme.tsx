@@ -43,7 +43,6 @@ const darkThemeColors = {
 
 
 function getTheme (mode = "light") {
-
     return {
         colors: mode === "dark" ? {...darkThemeColors} : {...lightThemeColors},
         fonts: ["sans-serif", "Roboto"],
@@ -55,10 +54,18 @@ function getTheme (mode = "light") {
     }
 }
 
-const Theme = ({ children, mode }) => {
-    console.log(mode);
+export const Theme = ({ children, mode }) => {
     return <ThemeProvider theme={getTheme(mode)}>{children}</ThemeProvider>
-
 }
 
-export default Theme;
+export const getThemeMode = ctx => {
+    let cookies;
+
+    if (ctx.req) {
+        cookies = cookie.parse(ctx.req.headers && ctx.req.headers.cookie && ctx.req.headers.cookie || "");
+    } else {
+        cookies = cookie.parse(document.cookie);
+    }
+
+    return cookies.theme ? cookies.theme : "light";
+}

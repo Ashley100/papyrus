@@ -28,13 +28,13 @@ export default async function userLogoutController (request, response) {
         // response.setHeader("Set-Cookie", ["token=null"]);
         response.setHeader("Authorization", "Bearer null");
 
-        response.status(200).json(formatResponse(200, [], "Logout ok"));
+        response.status(200).json(formatResponse(200, true, [], "Logout ok"));
 
     } catch (e) {
 
         console.log("userLogoutController => error: ", e);
 
-        response.status(501).json(formatResponse(409, e, "Logout failed!"));
+        response.status(501).json(formatResponse(409, false, e, "Logout failed!"));
     }
 
 }

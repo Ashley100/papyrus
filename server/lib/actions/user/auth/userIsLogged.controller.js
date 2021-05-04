@@ -18,13 +18,13 @@ export default async function userIsLoggedController (request, response) {
 
         await UserAuthClass.isLogged(token);
 
-        response.status(200).json(formatResponse(200, [], "Logged ok"));
+        response.status(200).json(formatResponse(200, true, [], "Logged ok"));
 
     } catch (e) {
 
         console.log("userIsLoggedController => error: ", e);
 
-        response.status(501).json(formatResponse(409, [], "Logged failed!"));
+        response.status(501).json(formatResponse(409, false, [], "Logged failed!"));
     }
 
 }

@@ -5,7 +5,7 @@ export default function Main (props) {
     const { children } = props
     return (
         <div className='layout'>
-            <Header/>
+            <Header store={props.store}/>
             {children}
         </div>
     );
