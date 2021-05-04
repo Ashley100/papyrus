@@ -8,6 +8,7 @@ import {authAPI} from "../client/api/auth";
 
 // styles
 import '../public/globals.css'
+import WithAuth from "../client/components/authProvider";
 
 
 class MyApp extends App {
@@ -22,13 +23,13 @@ class MyApp extends App {
 
         pageProps.theme = getThemeMode(ctx);
 
-        console.log(pathname);
+
 
         const userLogged = await authAPI.verifyUser(ctx.req);
 
         pageProps.store = {
             user: {
-                logged: userLogged.status
+                logged: false // userLogged.status
             }
         };
 
@@ -40,12 +41,14 @@ class MyApp extends App {
         const {Component, pageProps} = this.props;
 
         return (
-            <Theme mode={pageProps.theme}>
-                <GlobalStyles/>
-                <Main {...pageProps}>
-                    <Component {...pageProps} />
-                </Main>
-            </Theme>
+            <WithAuth {...pageProps}>
+                <Theme mode={pageProps.theme}>
+                    <GlobalStyles/>
+                    <Main {...pageProps}>
+                        <Component {...pageProps} />
+                    </Main>
+                </Theme>
+            </WithAuth>
         )
     }
 }

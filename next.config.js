@@ -7,6 +7,8 @@ const mongodb = {
 module.exports = {
 
     // Environment Variables
+    generateEtags: false,
+
     env: {
         mongodbURL: `mongodb+srv://${mongodb.username}:${mongodb.password}@cluster0.bynuf.mongodb.net/${mongodb.databaseName}?retryWrites=true&w=majority`,
         bcryptSecret: "",

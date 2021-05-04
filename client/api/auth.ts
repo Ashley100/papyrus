@@ -7,15 +7,14 @@ export const authAPI = {
         try {
             if(req) {
                 const response = await api(req).get('api/auth/islogged');
-                return response.data
+                return response?.data
             } else {
                 const response = await api(null).get('api/auth/islogged');
-                return response.data
+                return response?.data
             }
         } catch (e) {
-            console.log("authAPI >> verifyUser >> error >> ", e.response.data);
-            return e.response.data;
+            console.log("authAPI >> verifyUser >> error >> ", e?.response?.data);
+            return e?.response?.data;
         }
     }
-
 }
